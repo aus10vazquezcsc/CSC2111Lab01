@@ -12,7 +12,7 @@ using namespace std;
     bool _eof;
     bool closed;
 }*/
-asdhf;asjdf;lasdf
+
 class ReadFile
 {
     private:
