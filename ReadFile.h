@@ -6,13 +6,7 @@
 #include <fstream>
 using namespace std;
 
-/*struct ReadFile
-{
-    ifstream input_file;
-    bool _eof;
-    bool closed;
-}*/
-
+//! Class to read in from a file and close the file when finished.
 class ReadFile
 {
     private:
@@ -20,18 +14,17 @@ class ReadFile
         bool _eof;
         bool closed;
 	public:
+	    //! The constructor that accepts the file name to be read from.
         ReadFile(const char* file_name);
+		//! The destructor.
         ~ReadFile();
 		
+		//! Returns a string that holds the contents of the file.
         String* readLine();
+		//! Returns a boolean of end of file.
         bool eof();
+		//! Closes the file if not already closed.
         void close();	
-};
-
-/*ReadFile* createReadFile(const char* file_name);
-void destroyReadFile(ReadFile* rf);
-String* readLine(ReadFile* rf);
-bool eof(ReadFile* rf);
-void close(ReadFile* rf);*/
+}
 
 #endif
