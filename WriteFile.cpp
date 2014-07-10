@@ -9,11 +9,7 @@ WriteFile::WriteFile(const char* file_name)
 
 WriteFile::~WriteFile()
 {
-<<<<<<< HEAD
 
-=======
-   
->>>>>>> 1280d1f6b2f7ee0857c95d2e221ff41cdf16108b
 }
 
 void WriteFile::close()
@@ -25,11 +21,7 @@ void WriteFile::close()
    }
 }
 
-<<<<<<< HEAD
 void WriteFile::writeLine(String* line)
-=======
-void WriteFile::writeLine(string* line)
->>>>>>> 1280d1f6b2f7ee0857c95d2e221ff41cdf16108b
 {
    if (!closed && line->length() > 0)
    {
